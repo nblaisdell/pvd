@@ -102,6 +102,8 @@ button {
 	padding: 30px 7%;
 }.block1 p {
 	font-size: 1.4em;
+}.block1 div a {
+  color: white;
 }
 
 .port-link { /*see port-intro below for port link*/
@@ -127,17 +129,16 @@ button {
 }
 
 .block4 { /*portfolio on home*/
-  padding: 4em;
+  padding: 3em;
   background-image: url("../img/IMG_3087-EFFECTS.jpg");
-  background-position: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }.block4-inner {
   margin: 0em 4em;
-  padding: 20px 30px 40px;
-  background-color: white;
+  padding: 50px 60px 80px;
+  background: rgba(255, 255, 255, 0.9);
 }.block4 a {
   border: solid 1px;
   padding: 15px;
@@ -175,34 +176,46 @@ footer{
   padding: 5px;
 }footer a {
   text-decoration: none;
+  color: white;
 }
 
 .port-intro {
-  padding: 2em;
+  padding: 0 2em;
   background-image: url("../img/wheat-3506758_1920.jpg");
   min-height: 0px;
   color: black;
+  //background-position: center;
+  background-attachment: fixed;
+  //background-position: center;
+  background-repeat: no-repeat;
+  //background-size: cover;
 }.port-intro a {
-  color: black;
-  border: solid 1px;
-  padding: 10px;
-  background-color: white;
+  //color: black;
+  //border: solid 1px;
+  //padding: 10px;
+  //background-color: white;
+}.port-fill {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px 7%;
+}.port-fill p {
+  font-size: 1.4em;
 }
 
-.sites{
-  background-color: #EEFFFF;
+.sites {
+  background-color: #E9EBFF;
   border-top: solid 1px #22AAAA;
   border-bottom: solid 1px #22AAAA;
+  padding: .2em 0;
 }
 
 .wrap {
   display: flex;
-  padding: 0em 1em;
+  padding: 0em 1.8em;
 }
 
 .item {
   flex: 1;
-  background-color: #ddd;
+  background-color: #D9DBF1;
   padding: 1em;
   margin: 1em;
   border: solid 1px;
@@ -212,18 +225,54 @@ footer{
   color: black;
 }
 
+.block3 .item {
+  margin: 0 1em;
+  padding: 1.8em;
+}
+
 .port {
   cursor: pointer;
   border: none;
   text-align: center;
+  font-size: 1.2em;
+  padding: 21px;
 } .port:hover {
-  background-color: #ccc;
+  background-color: #FFEF98;
+  border: 1px solid black;
+  padding: 20px;
 }
 
 .port-img {
   width: 100%;
   border: solid 1px;
   margin-top: 17px;
+}
+
+.price {
+  width: 760px;
+  margin: 40px auto;
+}
+
+.black {
+  color: white;
+  border: solid 1px;
+  padding: 10px;
+  background-color: black;
+  text-decoration: none;
+}.black:hover {
+  color: black;
+  background-color: white;
+}
+
+.white {
+  color: black;
+  border: solid 1px;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+}.white:hover {
+  color: white;
+  background-color: black;
 }
 
 /* ==========================================================================
