@@ -184,11 +184,10 @@ footer{
   background-image: url("../img/wheat-3506758_1920.jpg");
   min-height: 0px;
   color: black;
-  //background-position: center;
+  background-position: center;
   background-attachment: fixed;
-  //background-position: center;
   background-repeat: no-repeat;
-  //background-size: cover;
+  background-size: cover;
 }.port-intro a {
   //color: black;
   //border: solid 1px;
