@@ -94,6 +94,8 @@ button {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}.block1 a {
+  margin-left: 30px;
 }.block1 div {
 	color: #ffffff;
 	background: rgba(0, 0, 0, 0.5);
@@ -104,6 +106,7 @@ button {
 	font-size: 1.4em;
 }.block1 div a {
   color: white;
+  margin-left: 0px;
 }
 
 .port-link { /*see port-intro below for port link*/
@@ -119,8 +122,8 @@ button {
 
 .block2 { /*upgrade*/
   text-align: center;
-  font-family: 'DM Serif Display';
-  padding: 0px;
+  //font-family: 'DM Serif Display';
+  padding-top: 30px;
   font-size: 1.2em;
 }
 
@@ -277,37 +280,50 @@ footer{
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-.clearfix::after {
-  clear: both;
-}
-
+.clearfix::before,.clearfix::after{content:" ";display: table;}.clearfix::after{clear:both;}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 980px) {
+  .block1 {
+    min-height: 20px;
+  }
+  .block1 div {
+    width: 100%;
+    min-height: 20px;
+  }
+  .wrap {
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    width: 100%;
+  }
+  .item {
+    display: block;
+    //width: 100%;
+  }
+  .block3 .item {
+    margin: 0px 0px 20px 0px;
+    padding: 20px;
 }
+  .block4-inner {
+    margin: 0em;
+  }
+  .block5 a h1 {
+    width: 100%;
+  }
+  .port-intro {
+    padding: 0px;
+  }
+  .price {
+    width: auto;
+    margin: 40px 20px;
+  }
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -321,54 +337,4 @@ footer{
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+@media print{*,::after,::before{background:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" (" attr(href) ")"}abbr[title]::after{content:" (" attr(title) ")"}pre{white-space:pre-wrap!important}blockquote,pre{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}img,tr{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
