@@ -312,7 +312,7 @@ footer{
   .block4-inner {
     margin: 0em;
   }
-  .block5 a h1 {
+  .block5 a h1, .block4 a {
     width: 100%;
   }
   .port-intro {
