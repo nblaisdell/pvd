@@ -134,15 +134,18 @@ h4 { /*none*/
   padding: 50px 60px 80px;
   background: rgba(255, 255, 255, 0.9);
 }.block4 a {
+  padding: 0;
+  margin: 0;
+} button { /*janky nowrap fix*/
+  padding: 0;
+  background-color: white;
+  border: none;
   border: solid 1px;
   padding: 15px;
   color: white;
   background-color: #2F2E2E;
   font-style: italic;
-} button { /*janky nowrap fix*/
-  padding: 0
-  background-color: white;
-  border: none;
+  cursor: pointer;
 }
 
 .block5 {
