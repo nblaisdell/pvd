@@ -77,15 +77,6 @@ h4 { /*none*/
   margin: 0;
 }
 
-button {
-	padding: 10px 15px;
-	background-color: white;
-	border: none;
-}button:hover {
-	padding: 10px 15px;
-	background-color: blue;
-}
-
 .block1 {
 	background-image: url("../img/office-925806_1920.jpg");
 	background-position: center; 
@@ -148,6 +139,10 @@ button {
   color: white;
   background-color: #2F2E2E;
   font-style: italic;
+} button { /*janky nowrap fix*/
+  padding: 0
+  background-color: white;
+  border: none;
 }
 
 .block5 {
@@ -312,7 +307,7 @@ footer{
   .block4-inner {
     margin: 0em;
   }
-  .block5 a h1, .block4 a {
+  .block5 a h1 {
     width: 100%;
   }
   .port-intro {
@@ -323,7 +318,6 @@ footer{
     margin: 40px 20px;
   }
 }
-
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
