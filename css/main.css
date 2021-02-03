@@ -182,7 +182,8 @@ footer{
 
 .port-intro {
   padding: 0 2em;
-  background-image: url("../img/wheat-3506758_1920.jpg");
+  background-color: white;
+  //background-image: url("../img/wheat-3506758_1920.jpg");
   min-height: 0px;
   color: black;
   background-position: center;
